@@ -1,59 +1,91 @@
-# BattleshipClient
+# Battleship Application
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.10.
+A classic Battleship game built with **.NET 8 (Web API)** for the backend and **Angular 19** for the frontend.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🧱 Project Structure
 
-```bash
-ng serve
+```
+/                        # Solution root
+├── API/                 # .NET 8 backend (Web API)
+│   ├── Battleship.Api
+│   ├── Battleship.Application
+│   ├── Battleship.Domain
+│   └── Battleship.Infrastructure
+├── Battleship.Tests         # Test project (unit/integration tests)
+└── ClientApps/
+    └── battleship-client   # Angular 19 frontend
+        ├── src
+        ├── angular.json
+        └── package.json
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## ⚙️ Prerequisites
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Backend (.NET 8)
+- .NET 8 SDK
+- Visual Studio 2022+ or VS Code
 
+### Frontend (Angular 19)
+- Node.js (v18+)
+- Angular CLI (`npm install -g @angular/cli@19`)
+
+---
+
+## 🚀 How to Run the Project
+
+### 1. Clone the Repository
 ```bash
-ng generate component component-name
+git clone <your-repo-url>
+cd Battleship
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
+### 2. Run the Backend API
 ```bash
-ng generate --help
+dotnet run --project API/Battleship.Api
 ```
+API runs on [https://localhost:7034](https://localhost:7034) by default (check launch settings).
 
-## Building
-
-To build the project run:
-
+### 3. Setup and Run the Angular Frontend
 ```bash
-ng build
+cd ClientApps/battleship-client
+npm install
+ng serve --open
 ```
+Frontend runs on [http://localhost:4200](http://localhost:4200).
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+## 🧪 Running Tests
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
+To run backend tests:
 ```bash
-ng test
+dotnet test Battleship.Tests/Battleship.Tests.csproj
 ```
+This will execute all unit tests for the backend.
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+## 📦 Technologies Used
 
-```bash
-ng e2e
-```
+### Backend
+- .NET 8 (ASP.NET Core Web API)
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+### Frontend
+- Angular 19
+- Angular Material
+- TypeScript
 
-## Additional Resources
+---
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## ✅ Features
+- [x] Start a new Battleship game
+- [x] Place ships on the board
+- [x] Take turns firing shots
+- [x] Track game state and winner
+- [x] RESTful API endpoints
+- [x] Modern Angular UI
+
