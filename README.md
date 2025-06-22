@@ -39,7 +39,7 @@ A classic Battleship game built with **.NET 8 (Web API)** for the backend and **
 
 ### 1. Clone the Repository
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/nadeeka1996/Battleship.git
 cd Battleship
 ```
 
