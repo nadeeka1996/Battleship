@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.*" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.*" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Battleship.Application\Battleship.Application.csproj" />
+	</ItemGroup>
+
+</Project>

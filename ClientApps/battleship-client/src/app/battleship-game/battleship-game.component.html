@@ -1,0 +1,34 @@
+<mat-card style="padding: 16px; background: #fafafa" class="battleship-container">
+  <div class="grid-wrapper">
+    <div *ngIf="winMessage" class="win-message-overlay">
+      {{ winMessage }}
+    </div>
+    <div [class.grid-dimmed]="winMessage">
+      <div style="display: flex; margin-top: 8px;">
+        <div style="width: 40px;"></div>
+        <ng-container *ngFor="let col of [].constructor(gridSize); let i = index">
+          <div class="cell-label">{{ getColLabel(i) }}</div>
+        </ng-container>
+      </div>
+
+      <ng-container *ngFor="let row of grid; let rowIndex = index">
+        <div style="display: flex;">
+          <div class="cell-label">{{ getRowLabel(rowIndex) }}</div>
+          <ng-container *ngFor="let cell of row; let colIndex = index">
+            <div
+              class="grid-cell"
+              [ngClass]="cell.state"
+              (click)="cellClick(rowIndex, colIndex)">
+              <mat-icon *ngIf="cell.state === 'hit'" color="warn">whatshot</mat-icon>
+              <mat-icon *ngIf="cell.state === 'miss'" color="primary">close</mat-icon>
+              <mat-icon *ngIf="cell.state === 'sunk'" color="accent">directions_boat</mat-icon>
+            </div>
+          </ng-container>
+        </div>
+      </ng-container>
+    </div>
+  <div *ngIf="!gameId && lastGameId" style="text-align: center; margin-top: 16px;">
+        <button mat-raised-button color="primary" (click)="playAgain()">Play Again</button>
+      </div>
+  </div>
+</mat-card>

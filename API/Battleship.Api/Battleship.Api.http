@@ -1,0 +1,22 @@
+@Battleship.Api_HostAddress = http://localhost:5000/api
+
+###
+# 1. Create a new game
+POST {{Battleship.Api_HostAddress}}/games
+Content-Type: application/json
+
+###
+
+###
+# 2. Get game state
+# Replace {{gameId}} with the GUID returned from the create call
+GET {{Battleship.Api_HostAddress}}/games/{{gameId}}
+
+###
+
+###
+# 3. Fire a shot
+# Replace {{gameId}} with your game’s GUID.
+# Body is a plain string like "B4" (no extra JSON envelope).
+POST {{Battleship.Api_HostAddress}}/games/{{gameId}}/shots
+Content-Type: text/plain

@@ -1,0 +1,98 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36203.30
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4D2743D9-0C3C-4CA8-B652-880A58F75CC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Battleship.Api", "API\Battleship.Api\Battleship.Api.csproj", "{8EDD95F1-CBC2-433A-B628-8F750F1B12ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Battleship.Application", "API\Battleship.Application\Battleship.Application.csproj", "{DCF442F7-8E8B-47FB-BAD4-13A758713C4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Battleship.Infrastructure", "API\Battleship.Infrastructure\Battleship.Infrastructure.csproj", "{F5EF438B-A255-4779-A45C-AE074FA25950}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Battleship.Domain", "API\Battleship.Domain\Battleship.Domain.csproj", "{BEA18544-F50C-4ACA-B9F0-CF043CDBD752}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{AF7F87E7-5F26-43FD-B53B-99B001C9670E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Battleship.Tests", "API\Battleship.Tests\Battleship.Tests.csproj", "{99540484-ADC5-44A7-82FC-CAB2F725EF17}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{640E5767-6AD6-49AC-AE06-F8C5B7489666}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClientApps", "ClientApps", "{0ACCB4CD-0A92-41E4-98E5-2B8494096056}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "battleship-client", "ClientApps\battleship-client\", "{8DAB75BC-7AF5-4BA9-A104-FC9D82096832}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_65153"
+		Debug.AspNetCompiler.PhysicalPath = "ClientApps\battleship-client\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_65153\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_65153"
+		Release.AspNetCompiler.PhysicalPath = "ClientApps\battleship-client\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_65153\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "65153"
+		SlnRelativePath = "ClientApps\battleship-client\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8EDD95F1-CBC2-433A-B628-8F750F1B12ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EDD95F1-CBC2-433A-B628-8F750F1B12ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EDD95F1-CBC2-433A-B628-8F750F1B12ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EDD95F1-CBC2-433A-B628-8F750F1B12ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCF442F7-8E8B-47FB-BAD4-13A758713C4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCF442F7-8E8B-47FB-BAD4-13A758713C4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCF442F7-8E8B-47FB-BAD4-13A758713C4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCF442F7-8E8B-47FB-BAD4-13A758713C4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5EF438B-A255-4779-A45C-AE074FA25950}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5EF438B-A255-4779-A45C-AE074FA25950}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5EF438B-A255-4779-A45C-AE074FA25950}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5EF438B-A255-4779-A45C-AE074FA25950}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEA18544-F50C-4ACA-B9F0-CF043CDBD752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEA18544-F50C-4ACA-B9F0-CF043CDBD752}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEA18544-F50C-4ACA-B9F0-CF043CDBD752}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEA18544-F50C-4ACA-B9F0-CF043CDBD752}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DAB75BC-7AF5-4BA9-A104-FC9D82096832}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DAB75BC-7AF5-4BA9-A104-FC9D82096832}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DAB75BC-7AF5-4BA9-A104-FC9D82096832}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DAB75BC-7AF5-4BA9-A104-FC9D82096832}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{99540484-ADC5-44A7-82FC-CAB2F725EF17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99540484-ADC5-44A7-82FC-CAB2F725EF17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99540484-ADC5-44A7-82FC-CAB2F725EF17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99540484-ADC5-44A7-82FC-CAB2F725EF17}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4D2743D9-0C3C-4CA8-B652-880A58F75CC1} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{8EDD95F1-CBC2-433A-B628-8F750F1B12ED} = {4D2743D9-0C3C-4CA8-B652-880A58F75CC1}
+		{DCF442F7-8E8B-47FB-BAD4-13A758713C4A} = {4D2743D9-0C3C-4CA8-B652-880A58F75CC1}
+		{F5EF438B-A255-4779-A45C-AE074FA25950} = {4D2743D9-0C3C-4CA8-B652-880A58F75CC1}
+		{BEA18544-F50C-4ACA-B9F0-CF043CDBD752} = {4D2743D9-0C3C-4CA8-B652-880A58F75CC1}
+		{8DAB75BC-7AF5-4BA9-A104-FC9D82096832} = {0ACCB4CD-0A92-41E4-98E5-2B8494096056}
+		{AF7F87E7-5F26-43FD-B53B-99B001C9670E} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{99540484-ADC5-44A7-82FC-CAB2F725EF17} = {AF7F87E7-5F26-43FD-B53B-99B001C9670E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {13D271E2-9F3C-43A7-9884-B5F61725A3E7}
+	EndGlobalSection
+EndGlobal

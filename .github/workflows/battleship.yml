@@ -1,0 +1,40 @@
+name: Battleship
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Restore dependencies
+        run: dotnet restore API/Battleship.API.sln
+
+      - name: Build
+        run: dotnet build API/Battleship.API.sln --no-restore
+
+      - name: Test
+        run: dotnet test API/Battleship.API.sln --no-build --verbosity normal
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install Client Dependencies
+        run: |
+          find . -type d -name "battleship-client" -exec sh -c 'cd "{}" && npm install' \;
+
+      - name: Build Client Apps
+        run: |
+          find . -type d -name "battleship-client" -exec sh -c 'cd "{}" && npm run build' \;
