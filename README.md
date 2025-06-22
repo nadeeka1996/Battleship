@@ -7,19 +7,21 @@ A classic Battleship game built with **.NET 8 (Web API)** for the backend and **
 ## 🧱 Project Structure
 
 ```
-/                        # Solution root
-├── API/                 # .NET 8 backend (Web API)
-│   ├── Battleship.Api
-│   ├── Battleship.Application
-│   ├── Battleship.Domain
-│   └── Battleship.Infrastructure
-├── Battleship.Tests         # Test project (unit/integration tests)
+/                         # Solution Root
+├── API/                  # .NET 8 Backend (Web API)
+│   ├── src/
+│   │   ├── Battleship.Api            
+│   │   ├── Battleship.Application     
+│   │   ├── Battleship.Domain          
+│   │   └── Battleship.Infrastructure 
+│   └── test/
+│       └── Battleship.Tests        
+│
 └── ClientApps/
-    └── battleship-client   # Angular 19 frontend
-        ├── src
+    └── battleship-client             # Angular 19 Frontend
+        ├── src/
         ├── angular.json
         └── package.json
-```
 
 ---
 
@@ -82,10 +84,7 @@ This will execute all unit tests for the backend.
 ---
 
 ## ✅ Features
-- [x] Start a new Battleship game
-- [x] Place ships on the board
-- [x] Take turns firing shots
-- [x] Track game state and winner
-- [x] RESTful API endpoints
-- [x] Modern Angular UI
+- Start a new Battleship game where the user plays against the computer in a single-sided game
+- RESTful API endpoints (built with .NET 8 Web API)
+- Modern Angular UI (Angular 19 frontend)
 
